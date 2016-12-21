@@ -2,6 +2,7 @@
 	position: fixed;
     left: 0;
     right: 0;
+    bottom:0;
     z-index: -1000;
     display: block;
     width: 100%;
@@ -24,4 +25,53 @@
 
 nav ul a, nav a, nav .brand-logo{
 	color: black;
+}
+nav .brand-logo{
+	font-size:3.8em;
+}
+.fa-2x {
+	vertical-align: 0;
+	margin: -6px 4px;
+}
+.profile-img {
+	width: 230px;
+    margin: 30px auto 30px auto;
+    position: relative;
+    display: block;
+    border: 2px solid white;
+}
+
+.main-display img {
+	margin-top: 12px;
+	margin-bottom: 10px;
+	-webkit-box-shadow: 0px 13px 32px -1px rgba(0,0,0,0.64);
+    -moz-box-shadow: 0px 13px 32px -1px rgba(0,0,0,0.64);
+    box-shadow: 0px 13px 32px -1px rgba(0,0,0,0.64);
+}
+.main-display {
+	text-align: center;
+	color: white;
+}
+.main-display h1{
+	font-size:30px;
+	margin:0;
+}
+.main-display h2{
+	font-size:24px;
+	margin:0 auto 18px auto;
+}
+.main-display hr{
+	width:100px;
+}
+
+.quotes {
+	height: 100px;
+	font-size:16px;
+	text-align: center;
+	color:white;
+	font-weight: 500;
+}
+
+.quotes p{
+	text-shadow: 2px 0px 0px #000;
 }
