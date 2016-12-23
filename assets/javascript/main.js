@@ -34,6 +34,37 @@ $(document).ready(function() {
 	}
 	$(window).load(showQuotes)
 	
-	
+	//click event for "what I do" button
+	$('#whatIDoBtn').on('click', function(){
+		//Button Color Changes
+			//removes orange color from other button
+		$('#knowledgeBtn').removeClass('deep-orange darken-3');
+			//add blue-grey button color to button NOT clicked
+		$('#knowledgeBtn').addClass('blue-grey darken-1');
+			//removes gray color from button clicked
+		$(this).removeClass('blue-grey darken-1');
+			//adds orange color to button clicked
+		$(this).addClass('deep-orange darken-3');
+		//Unhides container for "What I do"
+		$('#whatIDoContent').removeClass('hide');
+		// Hides container for "Knowledge"
+		$('#knowledgeContent').addClass('hide');
+	})
+	//click event for "areas of knowledge" button
+	$('#knowledgeBtn').on('click', function(){
+		//Button Color Changes
+			//removes orange color from button NOT clicked
+		$('#whatIDoBtn').removeClass('deep-orange darken-3');
+			//add blue-grey button color to button NOT clicked
+		$('#whatIDoBtn').addClass('blue-grey darken-1');
+			//removes gray color from button clicked
+		$(this).removeClass('blue-grey darken-1');
+			//adds orange color to button clicked
+		$(this).addClass('deep-orange darken-3');
+		//Unhides container for "Areas of Knowledge"
+		$('#knowledgeContent').removeClass('hide');
+		//Hides container for "What I do" 
+		$('#whatIDoContent').addClass('hide');
+	})
 
 })

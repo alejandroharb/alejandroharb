@@ -1,7 +1,37 @@
+body {
+	background-image: url('../img/feather-background.png');
+	background-repeat: repeat;
+    background-position:center center;
+}
 nav .brand-logo{
 	font-size:3.5em;
+}
+
+.nav-links li a {
+	font-size:20px;
+}
+nav ul a{
+	font-weight: 700;
 }
 .fa-2x {
 	vertical-align: 0;
 	margin: -6px 4px;
+}
+
+.background-btns {
+	margin:30px auto;
+	text-align: center;
+}
+
+.active {
+	display:block;
+}
+
+.noDisplay {
+	display:none;
+}
+
+#whatIDoContent img{
+	display:block;
+	margin:15px auto;
 }

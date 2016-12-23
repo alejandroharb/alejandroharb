@@ -73,10 +73,10 @@ nav .brand-logo{
 }
 
 .quotes p{
-	text-shadow: 2px 0px 0px #000;
+	text-shadow: 0px 1px 2px #000;
 }
 
 a.linkedIn {
-    color:#1565c0;
+    color:#546e7a;
     border-radius: 11px;
 }
