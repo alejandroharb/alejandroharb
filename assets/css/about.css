@@ -35,3 +35,9 @@ nav ul a{
 	display:block;
 	margin:15px auto;
 }
+#frontEnd, #backEnd, #analytics {
+	display:none;
+}
+#knowledgeContent {
+	display:none;
+}

@@ -32,8 +32,22 @@ $(document).ready(function() {
 				};
 			},9000);
 	}
+	//when window loads, run function that cycles through quote array to display quote stings
 	$(window).load(showQuotes)
 	
+	//when window loads, the different content sections fade in one after the other
+	$(window).load(function(){
+		//front end fades in first with duration of 1 sec.
+		$('#frontEnd').fadeIn(1000, function(){
+			//when first fade-in finished, second content section fades in
+			$('#backEnd').fadeIn(1000, function(){
+				$('#analytics').fadeIn(1000);
+			});
+		});
+		
+		
+	})
+
 	//click event for "what I do" button
 	$('#whatIDoBtn').on('click', function(){
 		//Button Color Changes
@@ -46,9 +60,9 @@ $(document).ready(function() {
 			//adds orange color to button clicked
 		$(this).addClass('deep-orange darken-3');
 		//Unhides container for "What I do"
-		$('#whatIDoContent').removeClass('hide');
+		$('#whatIDoContent').fadeIn('slow');
 		// Hides container for "Knowledge"
-		$('#knowledgeContent').addClass('hide');
+		$('#knowledgeContent').hide();
 	})
 	//click event for "areas of knowledge" button
 	$('#knowledgeBtn').on('click', function(){
@@ -62,9 +76,9 @@ $(document).ready(function() {
 			//adds orange color to button clicked
 		$(this).addClass('deep-orange darken-3');
 		//Unhides container for "Areas of Knowledge"
-		$('#knowledgeContent').removeClass('hide');
+		$('#knowledgeContent').fadeIn('slow');
 		//Hides container for "What I do" 
-		$('#whatIDoContent').addClass('hide');
+		$('#whatIDoContent').hide();
 	})
 
 })
